@@ -1,0 +1,23 @@
+GET http://localhost:5000/public
+
+###
+POST  http://localhost:5000/public
+
+###
+PATCH  http://localhost:5000/public/15
+
+###
+DELETE   http://localhost:5000/public/12
+
+###
+
+POST http://localhost:5000/auth/login 
+Content-Type: application/json
+
+{
+"username": "bondhon"
+}
+
+### 
+GET http://localhost:5000/auth/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMwNjA3MX0.uCFzlatGoduR1tcJqLxpk8f9aZoVFqNwaDAEv7pbTPo
