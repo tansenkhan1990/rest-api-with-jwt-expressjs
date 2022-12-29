@@ -20,4 +20,8 @@ Content-Type: application/json
 
 ### 
 GET http://localhost:5000/auth/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMwNjA3MX0.uCFzlatGoduR1tcJqLxpk8f9aZoVFqNwaDAEv7pbTPo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMwOTkwMX0.5bOqBf2n6J0PtBrTSrKMQuy5EWCHQZSiKJ3QezbB7bg
+
+###
+GET  http://localhost:5000/auth/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMwOTkwMX0.5bOqBf2n6J0PtBrTSrKMQuy5EWCHQZSiKJ3QezbB7bg
