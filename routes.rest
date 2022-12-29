@@ -20,8 +20,22 @@ Content-Type: application/json
 
 ### 
 GET http://localhost:5000/auth/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMwOTkwMX0.5bOqBf2n6J0PtBrTSrKMQuy5EWCHQZSiKJ3QezbB7bg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMxMzQ3NywiZXhwIjoxNjcyMzEzNTM3fQ.7CKTIS81tSf6i8IwNaRWXtZ3OggVHNnJBLZ1vvCypR8
 
 ###
-GET  http://localhost:5000/auth/logout
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMwOTkwMX0.5bOqBf2n6J0PtBrTSrKMQuy5EWCHQZSiKJ3QezbB7bg
+DELETE http://localhost:5000/auth/logout 
+Content-Type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMxMzUxMX0.3slgnEdrC0oCYoGhG21zlY-vBnUd-1bUvhfhPfnGHUo"
+}
+
+###
+
+POST http://localhost:5000/auth/token 
+Content-Type: application/json
+
+{
+"token":
+ "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYm9uZGhvbiIsImlhdCI6MTY3MjMxMzU5NH0.aGA5iYr6QiB9S5QN0xkD2bu64aO3FaNV0gW3xDH8wwU"
+}
